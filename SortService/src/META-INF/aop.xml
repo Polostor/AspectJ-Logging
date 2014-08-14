@@ -2,5 +2,6 @@
 <aspectj>
     <aspects>
         <aspect name="org.sortservice.aspects.SortAspect"/>
+        <aspect name="org.sortservice.aspects.CacheAspect"/>
     </aspects>
 </aspectj>
