@@ -12,11 +12,7 @@ import org.aspectj.lang.annotation.Aspect;
  */
 @Aspect
 public class SortAspect {
-
-//    @Before("within(org.sortservice.services.Sort)")
-//    public void beforeSorting(JoinPoint jp) {
-//        System.out.println(jp.getKind() + " \n" + jp.getSignature().toString() + "\n");
-//    }
+    
     @After("call(void org.sortservice.services.Sort.AddNumber(int[]))")
     public void afterAddingNumber(JoinPoint jp) {
         System.out.println(jp.getSignature().toShortString());

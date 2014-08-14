@@ -7,10 +7,7 @@ import org.sortservice.services.Sort;
  * @author peta
  */
 public class Sorting {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         Sort sortMe = new Sort();        
         sortMe.SortNumbers();
