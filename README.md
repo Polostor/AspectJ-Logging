@@ -1,7 +1,7 @@
 Logging Sort Service
 ===============
 
-This is simple logging. This logs sort methods in one class using AspectJ.
+This is simple logging. This logs sort service methods using AspectJ.
 
 
 What is AspectJ
