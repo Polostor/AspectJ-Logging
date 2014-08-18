@@ -13,13 +13,13 @@ import org.aspectj.lang.annotation.Aspect;
 @Aspect
 public class SortAspect {
     
-    @After("call(void org.sortservice.services.Sort.AddNumber(int[]))")
+    @After("execute(void org.sortservice.services.Sort.addNumber(int[]))")
     public void afterAddingNumber(JoinPoint jp) {
         System.out.print(jp.getSignature().toShortString());
         System.out.println(" - " + Arrays.toString((int[]) jp.getArgs()[0]));
     }
 
-    @AfterReturning(pointcut = "call(int[] org.sortservice.services.Sort.SortNumbers())", returning = "arr")
+    @AfterReturning(pointcut = "execute(int[] org.sortservice.services.Sort.sortNumbers())", returning = "arr")
     public void afterSorting(JoinPoint jp, int[] arr) {
         System.out.print(jp.getSignature().toShortString());
         System.out.println(" - " + Arrays.toString(arr));

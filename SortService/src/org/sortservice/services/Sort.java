@@ -13,16 +13,16 @@ public class Sort {
     public Sort() {
     }
 
-    public void AddNumber(int[] numbers) {
+    public void addNumber(int[] numbers) {
         this.numbers = numbers;
     }
 
-    public int[] SortNumbers() {
-        if(numbers != null) SortItOut();
+    public int[] sortNumbers() {
+        if(numbers != null) sortItOut();
         return numbers;
     }
 
-    private void SortItOut() {
+    private void sortItOut() {
         Arrays.sort(numbers);
     }
 }

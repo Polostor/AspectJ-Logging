@@ -13,9 +13,9 @@ public class Start {
         Sort sortMe = new Sort();    
         
         int[] number = {1,3,5,2,4};        
-        sortMe.AddNumber(number);  
+        sortMe.addNumber(number);  
         
-        sortMe.SortNumbers();
+        sortMe.sortNumbers();
         
         System.out.println("------------------------------------");
         
